@@ -1,5 +1,7 @@
-h1 {
+h3 {
   color: #333;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 img {
@@ -9,10 +11,35 @@ img {
 #header {
   background-color: #f8f9fa;
 }
+#header nav.navbar {
+  padding: 6px 0;
+  justify-content: space-between;
+}
+#header nav.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+#header nav.navbar .navbar-collapse .navbar-nav .nav-item:last-child a {
+  padding-right: 0;
+}
+#header nav.navbar .navbar-toggler {
+  border: none;
+  outline: none !important;
+}
 
-.page-wrapper,
-.content-wrapper {
+.page-wrapper {
   margin-top: 30px;
+}
+.page-wrapper .content-wrapper .content {
+  text-align: justify;
+}
+@media (max-width: 767px) {
+  .page-wrapper .content-wrapper {
+    margin-top: 30px;
+  }
+  .page-wrapper .image-wrapper {
+    max-height: 400px;
+    overflow: hidden;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,21 +1,64 @@
 @import 'variables';
 
-h1  {
+%heading  {
   color: $brand-black;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 img {
   max-width: 100%;
 }
 
+h3 {
+  @extend %heading;
+}
+
 #header {
   background-color: #f8f9fa;
+
+  nav.navbar {
+    padding: 6px 0;
+    justify-content: space-between;
+
+    .navbar-collapse {
+      flex-grow: 0;
+
+      .navbar-nav {
+        .nav-item {
+          &:last-child {
+            a {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-toggler {
+      border: none;
+      outline: none !important;
+    }
+  }
 }
 
 .page-wrapper {
-}
-
-.page-wrapper,
-.content-wrapper {
   margin-top: 30px;
+  
+  .content-wrapper {
+    .content {
+      text-align: justify;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .content-wrapper {
+      margin-top: 30px;
+    }
+
+    .image-wrapper {
+      max-height: 400px;
+      overflow: hidden;
+    }
+  }
 }
