@@ -1,5 +1,5 @@
 h3 {
-  color: #333;
+  color: #343a40;
   font-size: 22px;
   font-weight: 600;
 }
@@ -8,8 +8,13 @@ img {
   max-width: 100%;
 }
 
+table tr td {
+  padding: 8px;
+  border: 1px solid #bbb;
+}
+
 #header {
-  background-color: #f8f9fa;
+  background-color: #343a40;
 }
 #header nav.navbar {
   padding: 6px 0;
@@ -21,13 +26,14 @@ img {
 #header nav.navbar .navbar-collapse .navbar-nav .nav-item:last-child a {
   padding-right: 0;
 }
-#header nav.navbar .navbar-toggler {
+#header nav.navbar button[data-toggle=collapse] {
   border: none;
   outline: none !important;
 }
 
 .page-wrapper {
   margin-top: 30px;
+  padding-bottom: 50px;
 }
 .page-wrapper .content-wrapper .content {
   text-align: justify;
