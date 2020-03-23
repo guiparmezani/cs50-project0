@@ -1,0 +1,18 @@
+h1 {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+#header {
+  background-color: #f8f9fa;
+}
+
+.page-wrapper,
+.content-wrapper {
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

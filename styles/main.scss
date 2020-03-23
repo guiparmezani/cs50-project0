@@ -1,0 +1,21 @@
+@import 'variables';
+
+h1  {
+  color: $brand-black;
+}
+
+img {
+  max-width: 100%;
+}
+
+#header {
+  background-color: #f8f9fa;
+}
+
+.page-wrapper {
+}
+
+.page-wrapper,
+.content-wrapper {
+  margin-top: 30px;
+}
